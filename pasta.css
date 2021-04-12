@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+
+#nav {
+  float: right;
+  background-color: red;
+}
+
+#nav a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 150%;
+  color: black;
+  font-weight: bold;
+}
+
+#nav a:hover {
+  text-decoration: underline;
+  
+}
+
+#header {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: none; /* url(https://media4.s-nbcnews.com/i/newscms/2017_41/1288319/20170828_20170822_11424_pastalikeapro_scottconant_styleddishes_0030_6aa19146b263f4803e6a06c1798de5a0.jpg); */
+  background-size: cover;
+  background-position: center center;
+  
+}
+
+#title h1 {
+  font-family: "Sigmar One", cursive;
+  text-decoration: underline;
+  font-size: 75px;
+  position: absolute;
+}
+
+#title h3 {
+  position: absolute;
+  top: 140px; 
+  font-size: 150%;
+}
+
+
+h4 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+li {
+  font-family: Georgia;
+}
+
+#ingredients {
+  display: inline-block;
+  float: left;
+  width: calc(100vw / 3 - 2vw);
+  height: 550px;
+}
+
+#ingredients li span {
+  font-style: italic;
+  color: #999;
+}
+
+#equipment {
+  display: inline-block;
+  float: left;
+  width: calc(100vw / 3 - 2vw);
+  height: 550px;
+}
+
+#equipment li:nth-child(5) {
+  color: green;
+}
+
+#equipment li:nth-child(6) {
+  color: green;
+}
+
+#directions {
+  width: 35%;
+  display: inline-block;
+  float: left;
+  width: calc(100vw / 3 - 2vw);
+  height: 550px;
+}
+
+#source {
+  padding: 0px;
+  clear: both;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+#notes {
+  width: 96%;
+  display: inline-block;
+  }
+
+@media (orientation: portrait) {
+  #directions, #ingredients, #equipment {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 575px) {
+  body {
+    background-color: lightblue;
+  }
+}
