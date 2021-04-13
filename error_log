@@ -1,0 +1,18 @@
+[13-Apr-2021 00:42:40 UTC] PHP Warning:  Use of undefined constant FILTER_SANITIZE_STING - assumed 'FILTER_SANITIZE_STING' (this will throw an Error in a future version of PHP) in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:42:40 UTC] PHP Warning:  filter_var() expects parameter 2 to be int, string given in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:42:52 UTC] PHP Warning:  Use of undefined constant FILTER_SANITIZE_STING - assumed 'FILTER_SANITIZE_STING' (this will throw an Error in a future version of PHP) in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:42:52 UTC] PHP Warning:  filter_var() expects parameter 2 to be int, string given in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:44:20 UTC] PHP Warning:  Use of undefined constant FILTER_SANITIZE_STING - assumed 'FILTER_SANITIZE_STING' (this will throw an Error in a future version of PHP) in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:44:20 UTC] PHP Warning:  filter_var() expects parameter 2 to be int, string given in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:45:22 UTC] PHP Warning:  Use of undefined constant FILTER_SANITIZE_STING - assumed 'FILTER_SANITIZE_STING' (this will throw an Error in a future version of PHP) in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:45:22 UTC] PHP Warning:  filter_var() expects parameter 2 to be int, string given in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:45:25 UTC] PHP Warning:  Use of undefined constant FILTER_SANITIZE_STING - assumed 'FILTER_SANITIZE_STING' (this will throw an Error in a future version of PHP) in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:45:25 UTC] PHP Warning:  filter_var() expects parameter 2 to be int, string given in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:45:28 UTC] PHP Warning:  Use of undefined constant FILTER_SANITIZE_STING - assumed 'FILTER_SANITIZE_STING' (this will throw an Error in a future version of PHP) in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:45:28 UTC] PHP Warning:  filter_var() expects parameter 2 to be int, string given in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:45:33 UTC] PHP Warning:  Use of undefined constant FILTER_SANITIZE_STING - assumed 'FILTER_SANITIZE_STING' (this will throw an Error in a future version of PHP) in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:45:33 UTC] PHP Warning:  filter_var() expects parameter 2 to be int, string given in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:46:24 UTC] PHP Warning:  Use of undefined constant FILTER_SANITIZE_STING - assumed 'FILTER_SANITIZE_STING' (this will throw an Error in a future version of PHP) in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:46:24 UTC] PHP Warning:  filter_var() expects parameter 2 to be int, string given in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:46:29 UTC] PHP Warning:  Use of undefined constant FILTER_SANITIZE_STING - assumed 'FILTER_SANITIZE_STING' (this will throw an Error in a future version of PHP) in /home/bsignore/public_html/tp8/recipes.php on line 39
+[13-Apr-2021 00:46:29 UTC] PHP Warning:  filter_var() expects parameter 2 to be int, string given in /home/bsignore/public_html/tp8/recipes.php on line 39

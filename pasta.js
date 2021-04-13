@@ -11,10 +11,13 @@ para.innerText = "Enjoy Your Meal!";
 document.getElementById("source").appendChild(para);
 
 // generic AJAX function to load fromFile into object with ID whereTo
-function loadFileInto(fromFile, whereTo) {
+function loadFileInto(fromIdentifier, fromList) {
 
 	// creating a new XMLHttpRequest object
 	ajax = new XMLHttpRequest();
+  
+  
+  fromFile = "recipes.php?id=" + fromIdentifier + "&list=" + fromList;
 
 	// defines the GET/POST method, source, and async value of the AJAX object
 	ajax.open("GET", fromFile, true);
@@ -23,7 +26,19 @@ function loadFileInto(fromFile, whereTo) {
 	ajax.onreadystatechange = function() {
 		
 			if ((this.readyState == 4) && (this.status == 200)) {
-				document.getElementById(whereTo).innerHTML = this.responseText;
+        
+        responseArray = JSON.parse(this.responseText);
+        responseHTML = "";
+        
+        if (this.responseText != "0") {
+          for (x = 0; x < responseArray.length; x++) {
+            responseHTML += "<li>" + responseArray[x] + "</li>";
+          }
+        }
+        
+        whereTo = "#" + fromList + " ul";
+        if (fromList == "directions") whereTo = "#" + fromList + " ol";
+				document.querySelector(whereTo).innerHTML = responseHTML;
 				
 			} else if ((this.readyState == 4) && (this.status != 200)) {
 				console.log("Error: " + this.responseText);
@@ -37,13 +52,11 @@ function loadFileInto(fromFile, whereTo) {
 
 }
 
-function Recipe(recipeName, imageURL, contributorName, ingredientFilename, equipmentFilename, directionsFilename) {
+function Recipe(recipeName, imageURL, contributorName, recipeIdentifier) {
   this.name = recipeName
   this.imgsrc = imageURL;
   this.contributor = contributorName;
-  this.ingFile = ingredientFilename;
-  this.equipFile = equipmentFilename;
-  this.dirFile = directionsFilename;
+  this.identifier = recipeIdentifier;
   
   
   this.displayRecipe =function() {
@@ -53,9 +66,9 @@ function Recipe(recipeName, imageURL, contributorName, ingredientFilename, equip
     
     document.querySelector("#header").style.backgroundImage = "url(" + this.imgsrc +")";
     
-    loadFileInto(this.ingFile, "ingredients");
-    loadFileInto(this.equipFile, "equipment");
-    loadFileInto(this.dirFile, "directions");
+    loadFileInto(this.identifier, "ingredients");
+    loadFileInto(this.identifier, "equipment");
+    loadFileInto(this.identifier, "directions");
     
     }
 
@@ -66,26 +79,22 @@ SpaghettiAglioeOlio = new Recipe(
   "Spaghetti Aglio e Olio",
   "https://media4.s-nbcnews.com/i/newscms/2017_41/1288319/20170828_20170822_11424_pastalikeapro_scottconant_styleddishes_0030_6aa19146b263f4803e6a06c1798de5a0.jpg",
   "Bruno",
-  "ingredients.html",
-  "equipment.html",
-  "directions.html"
+  "SpaghettiAglioeOlio"
+ 
   );
   
 LemonChickenPiccata = new Recipe(
   "Lemon Chicken Piccata",
   "https://sdutton355.com/tp4/chicken2.jpg",
   "Sophie",
-  "ingredients2.html",
-  "equipment2.html",
-  "directions2.html"
+  "LemonChickenPiccata"
   );
+
 BreadedFriedSoftlySpicedTofu = new Recipe(
 "Breaded, Fried, Softly Spiced Tofu",
 "https://rkolke355.com/tp4/tp4-image.jpg",
 "Rae",
-"ingredients3.html",
-"equipment3.html",
-"directions3.html",
+"BreadedFriedSoftlySpicedTofu",
 );
 
   
